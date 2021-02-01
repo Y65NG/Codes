@@ -1,0 +1,168 @@
+| Status | Current Number of Transaction Stored: 19
+------------ Transactions Stored in Ledger Below ----------
+| Ledger Balence Statistics: {'pubKey': 50}
+============ Transaction ===============
+| Txn: 5740371003323909685 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 50 | (36373, 844751) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003323911664 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 50 | (58943, 474361) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003323910792 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 50 | (59417, 478463) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003323912105 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 50 | (62639, 648547) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003323903401 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 50 | (50387, 531389) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 541593869515278510 
+| In Transactions:
+| Txn | Index | Signature |
+| 5740371003323909685 | 0 | (277471, 150337, 139860, 531794, 380529, 208177, 140699, 604278, 27416, 616410, 557731)
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 40 | (58943, 474361) | False
+| 10 | (36373, 844751) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 2855416139708151008 
+| In Transactions:
+| Txn | Index | Signature |
+| 5740371003323911664 | 0 | (246109, 398848, 343836, 275202, 404993, 330944, 275163, 242220, 33301, 90414, 23293)
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 10 | (59417, 478463) | False
+| 40 | (58943, 474361) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 3750625260075650956 
+| In Transactions:
+| Txn | Index | Signature |
+| 5740371003323910792 | 0 | (269191, 424243, 85979, 137365, 20758, 252140, 37119, 186536, 235123, 33989, 270449)
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 30 | (36373, 844751) | False
+| 20 | (59417, 478463) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 2855416139708109309 
+| In Transactions:
+| Txn | Index | Signature |
+| 5740371003323911664 | 0 | (246109, 398848, 343836, 275202, 404993, 330944, 275163, 242220, 33301, 90414, 23293)
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 20 | (62639, 648547) | False
+| 30 | (58943, 474361) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324451286 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (36373, 844751) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324457008 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (58943, 474361) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324452050 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (59417, 478463) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324451292 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (62639, 648547) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324457799 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (50387, 531389) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324452212 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (36373, 844751) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324451740 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (58943, 474361) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324457245 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (59417, 478463) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324452826 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (62639, 648547) | False
+========================================
+|
+============ Transaction ===============
+| Txn: 5740371003324456615 
+| THIS TRANSACTION IS FROM COINBASE 
+| Out Transactions:
+| Amount | reciver PubKey | isUsed
+| 25 | (50387, 531389) | False
+========================================
+|
+------------ Transactions Stored in Ledger Above ----------

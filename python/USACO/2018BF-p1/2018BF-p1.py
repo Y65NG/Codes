@@ -1,0 +1,6 @@
+line = open('teleport.in').read().strip().split(' ')
+a, b, x, y = list(map(int, line))
+result = min(abs(a - b), abs(x - a) + abs(y - b), abs(y - a) + abs(x - b))
+file = open('teleport.out', 'w')
+file.write(str(result))
+file.close()
