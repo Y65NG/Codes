@@ -1,0 +1,155 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'syllables' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING word as parameter.
+     */
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public static int syllables(String word) {
+        int syllable = 0;
+        String result = word;
+        String cut = word;
+        
+        if(suffixLoc(word) != 0){
+            cut = word.substring(0, suffixLoc(word));
+            result = insert(result, suffixLoc(word));
+            //System.out.println(result);
+            //System.out.println(cut);
+
+        }
+        if(prefixLoc(word) != 0){
+            cut = cut.substring(prefixLoc(word));
+            result = insert(result, prefixLoc(word));
+            //System.out.println(result);
+            //System.out.println(cut);
+        }
+        
+        
+        
+        for(int i = 0; i < result.length() - 2; i += 1){
+            if((isConsonant(result.substring(i, i + 1)) && isVowel(result.substring(i - 1, i)) && isVowel(result.substring(i + 1, i + 2))) || isConsonant(result.substring(i, i + 2)) && isVowel(result.substring(i - 1, i)) && isVowel(result.substring(i + 2, i + 3))){
+                result = insert(result, i - 1);
+                
+            }
+        }
+        
+        
+        for(int i = 0; i < result.length(); i += 1){
+            if(result.substring(i, i + 1).equals("|")){
+                syllable += i;
+            }
+        }
+        return syllable;
+    }
+    
+    
+    public static int prefixLoc(String word){
+        if(word.substring(0, 2).equals("co") || word.substring(0, 2).equals("de") || word.substring(0, 2).equals("re") || word.substring(0, 2).equals("un")){
+            return 2;
+        }else if(word.substring(0, 3).equals("dis") || word.substring(0, 3).equals("pre")){
+            return 3;
+        }
+        return 0;
+    }
+    
+    
+    public static int suffixLoc(String word){
+        if(word.substring(word.length() - 3).equals("age") || word.substring(word.length() - 3).equals("ful") || word.substring(word.length() - 3).equals("ing")){
+            return word.length() - 3;
+        }else if(word.substring(word.length() - 4).equals("less") || word.substring(word.length() - 4).equals("ment")){
+            return word.length() - 4;
+        }
+        return 0;
+    }
+    
+    
+    public static String insert(String word, int index){
+        return word.substring(0, index) + "|" + word.substring(index);
+    }
+    
+    
+    public static boolean isVowel(String word){
+        if(word.equals("a") || word.equals("e") || word.equals("i") || word.equals("o") || word.equals("u")){
+            return true;
+        }
+        return false;
+    }
+    
+    
+    public static boolean isConsonant(String word){
+        if(!(word.equals("a") || word.equals("e") || word.equals("i") || word.equals("o") || word.equals("u"))){
+            return true;
+        }else if(word.equals("ch") || word.equals("ck") || word.equals("ph") || word.equals("sh") || word.equals("th") || word.equals("wh") || word.equals("wr")){
+            return true;
+        } 
+        return false;
+    }
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String word = bufferedReader.readLine();
+
+        int result = Result.syllables(word);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
