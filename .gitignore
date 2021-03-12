@@ -15,6 +15,7 @@ build
 .idea
 .settings
 bin
+.history
 
 # Java:
 .classpath
